@@ -44,15 +44,17 @@ export default ComponentName
 function eventName() {
     alert('Cliked!')
 }
-
 export default eventName
-```
 
+- Generate 
+
+```
     src/                       
     └── event/             
         ├── eventName.js     
-        └── eventName.css  
-``` 
+        └── eventName.css      
+``
+
 ### Generate state 
 
 ```bash 
