@@ -28,10 +28,17 @@ export default ComponentName
 ```
 - Generate 
 
+<<<<<<< HEAD
     src/                       
     └── component/             
         ├── CompentName.js     
         └── CompentName.css    
+=======
+src/                       
+└── component/             
+   ├── CompentName.js     
+   └── CompentName.css    
+>>>>>>> 8a50338ea838518a33190b66dad8874f82b9f550
 
 ### Generate event 
 
@@ -95,7 +102,11 @@ const code = `import { useState } from "react";
 
 This command will generate a tailwind.config.css file at the root of your project, install Tailwind CSS in your project, and add the CSS dependencies to the src/App.css file.
 
+<<<<<<< HEAD
     - Root Directory           
+=======
+- Root Directory           
+>>>>>>> 8a50338ea838518a33190b66dad8874f82b9f550
     |- tailwind.config.css     
     |- src/                    
         |- App.css             
