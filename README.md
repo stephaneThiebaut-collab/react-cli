@@ -1,0 +1,68 @@
+# react-cli
+
+
+## Installation
+
+Generally, to install React CLI
+
+```bash
+    npm i -g @alkantarade/react-cli
+```
+
+## Usage/Examples
+
+### Generate component
+
+```bash 
+    react-cli component CompentName
+```
+
+```javascript
+import 'ComonentName.css';
+
+function ComonentName() {
+    <div>ComonentName Works!</div>
+}
+
+export default ComonentName
+```
+- Generate 
+
+| src/                       |
+| └── component/             |
+|     ├── CompentName.js     |
+|     └── CompentName.css    |
+
+### Generate event 
+
+```bash 
+    react-cli event eventName
+```
+
+```javascript
+function eventName() {
+    alert('Cliked!')
+}
+
+export default eventName
+```
+
+### Use Tailwind css
+
+```bash 
+    react-cli use Tailwind
+```
+
+This command will generate a tailwind.config.css file at the root of your project, install Tailwind CSS in your project, and add the CSS dependencies to the src/App.css file.
+
+|    - Root Directory           |
+|    |- tailwind.config.css     |
+|    |- src/                    |
+|        |- App.css             |
+
+
+## Next maj
+
+- use bootstrap
+- generate router
+- generate page
