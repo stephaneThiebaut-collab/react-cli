@@ -14,24 +14,31 @@ Generally, to install React CLI
 ### Generate component
 
 ```bash 
-    react-cli component CompentName
+    react-cli component ComponentName
 ```
 
 ```javascript
-import 'ComonentName.css';
+import 'ComponentName.css';
 
-function ComonentName() {
-    <div>ComonentName Works!</div>
+function ComponentName() {
+    <div>ComponentName Works!</div>
 }
 
-export default ComonentName
+export default ComponentName
 ```
 - Generate 
 
+<<<<<<< HEAD
+    src/                       
+    └── component/             
+        ├── CompentName.js     
+        └── CompentName.css    
+=======
 src/                       
 └── component/             
    ├── CompentName.js     
    └── CompentName.css    
+>>>>>>> 8a50338ea838518a33190b66dad8874f82b9f550
 
 ### Generate event 
 
@@ -47,6 +54,46 @@ function eventName() {
 export default eventName
 ```
 
+### Generate state 
+
+```bash 
+    react-cli state stateName
+```
+
+```javascript
+const code = `import { useState } from "react";
+    import  "../style/stateName.css";
+    function stateName() {
+        const price = 8;
+        const [cart, updateCart] = useState(0);
+        const [isOpen, setIsOpen] = useState(false);
+    
+        return isOpen ? (
+            <div className='lmj-cart'>
+                <button onClick={() => setIsOpen(false)}>Close</button>
+                <h2>Basket</h2>
+                <div>
+                    Monstera : {price}€
+                    <button onClick={() => updateCart(cart + 1)}>
+                        Add
+                    </button>
+                </div>
+                <h3>Total : {price * cart}€</h3>
+            </div>
+        ) : (
+            <button onClick={() => setIsOpen(true)}>Open the basket</button>
+        )
+    }
+    
+    export default stateName
+```
+- Generate 
+
+    src/                       
+    └── state/             
+        ├── stateName.js     
+        └── stateName.css    
+
 ### Use Tailwind css
 
 ```bash 
@@ -55,7 +102,11 @@ export default eventName
 
 This command will generate a tailwind.config.css file at the root of your project, install Tailwind CSS in your project, and add the CSS dependencies to the src/App.css file.
 
+<<<<<<< HEAD
+    - Root Directory           
+=======
 - Root Directory           
+>>>>>>> 8a50338ea838518a33190b66dad8874f82b9f550
     |- tailwind.config.css     
     |- src/                    
         |- App.css             

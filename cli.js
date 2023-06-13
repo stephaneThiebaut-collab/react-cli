@@ -6,6 +6,7 @@ const figlet = require('figlet');
 const fs = require('fs');
 const { exec } = require('child_process');
 const configTailind = require('./controller/forTailwindcss');
+const stateComponent = require('./controller/stateComponent');
 
 const controllerComponent = require('./controller/functionComponent');
 
@@ -64,7 +65,7 @@ program
 
 program
     .command('use Tailwind')
-    .description('use Tailwind (This command installs and initializes TailwindCSS.)')
+    .description('react-cli use Tailwind (This command installs and initializes TailwindCSS.)')
     .action(name => {
         exec('npm install -D tailwindcss', (error, stdout, stderr) => {
             if (error) {
@@ -95,7 +96,28 @@ program
 
         });
 
-    })
+    });
+
+    program
+    .command('state <name>')
+    .description('Generate a state component <name>.')
+    .action((name) => {
+        try {
+            if (!fs.existsSync("src")) {
+                fs.mkdirSync(`src`);
+            }
+            if (!fs.existsSync(`src/state`)) {
+                fs.mkdirSync(`src/state`);
+                fs.mkdirSync(`src/state/${name}`);
+                console.log(`\x1b[32m The event component ${name} created \x1b[0m`); //text vert
+                stateComponent.createStateComponent(name);
+            } else if(fs.existsSync(`src/state`)){
+                stateComponent.createStateComponent(name);
+            }
+        } catch (error) {
+            console.log('\x1b[31m A component with this name already exists. \x1b[0m'); //text rouge
+        }
+    });
 
 program.parse(process.argv);
 
