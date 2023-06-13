@@ -28,12 +28,12 @@ export default ComponentName
 ```
 - Generate 
 
-
+```
     src/                       
     └── component/             
         ├── CompentName.js     
         └── CompentName.css      
-
+```
 ### Generate event 
 
 ```bash 
@@ -52,7 +52,7 @@ export default eventName
     └── event/             
         ├── eventName.js     
         └── eventName.css  
-
+``` 
 ### Generate state 
 
 ```bash 
@@ -87,12 +87,12 @@ const code = `import { useState } from "react";
     export default stateName
 ```
 - Generate 
-
+```
     src/                       
     └── state/             
         ├── stateName.js     
         └── stateName.css    
-
+```
 ### Use Tailwind css
 
 ```bash 
@@ -102,12 +102,12 @@ const code = `import { useState } from "react";
 This command will generate a tailwind.config.css file at the root of your project, install Tailwind CSS in your project, and add the CSS dependencies to the src/App.css file.
 
 - Root Directory           
-
+```
     |- tailwind.config.css     
     |- src/                    
         |- App.css             
 
-
+```
 ## Next maj
 
 - use bootstrap
