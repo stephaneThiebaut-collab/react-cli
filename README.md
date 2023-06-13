@@ -28,7 +28,6 @@ export default ComponentName
 ```
 - Generate 
 
-<<<<<<< HEAD
     src/                       
     └── component/             
         ├── CompentName.js     
