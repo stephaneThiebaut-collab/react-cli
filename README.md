@@ -28,10 +28,10 @@ export default ComonentName
 ```
 - Generate 
 
-| src/                       |
-| └── component/             |
-|     ├── CompentName.js     |
-|     └── CompentName.css    |
+src/                       
+└── component/             
+   ├── CompentName.js     
+   └── CompentName.css    
 
 ### Generate event 
 
@@ -55,10 +55,10 @@ export default eventName
 
 This command will generate a tailwind.config.css file at the root of your project, install Tailwind CSS in your project, and add the CSS dependencies to the src/App.css file.
 
-|    - Root Directory           |
-|    |- tailwind.config.css     |
-|    |- src/                    |
-|        |- App.css             |
+- Root Directory           
+    |- tailwind.config.css     
+    |- src/                    
+        |- App.css             
 
 
 ## Next maj
